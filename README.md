@@ -52,7 +52,10 @@ Your app will be available at:
 ## 🖼️ Screenshots
 
 ### Home Page
-![VR180 Converter Screenshot](./screenshots/home.png)
+<img width="1066" height="490" alt="image" src="https://github.com/user-attachments/assets/62c95d69-72d5-4b26-9f66-f43d6f8d43af" />
+
+<img width="937" height="538" alt="image" src="https://github.com/user-attachments/assets/fc54fd66-b134-422f-a25c-b1a98fca691f" />
+
 
 ---
 
