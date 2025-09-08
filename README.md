@@ -32,11 +32,13 @@ This project provides a web interface to upload a video, process it with AI, and
 ```bash
 git clone https://github.com/YaminiMakala/vr180-converter.git
 cd vr180-converter
-2. Install dependencies
+
+###2. Install dependencies
 bash
 Copy code
 npm install
-3. Run the development server
+
+###3. Run the development server
 bash
 Copy code
 npm run dev
