@@ -24,18 +24,27 @@ This project provides a web interface to upload a video, process it with AI, and
   - YouTube VR
 - ⬇️ **Download VR180 MP4** for offline viewing
 
+---
 
+## 🚀 Getting Started
+
+### 1. Clone this repository
+```bash
+git clone https://github.com/YaminiMakala/vr180-converter.git
+cd vr180-converter
 2. Install dependencies
+bash
+Copy code
 npm install
-
 3. Run the development server
+bash
+Copy code
 npm run dev
-
-
-Your app will be available at http://localhost:5173
- (or similar).
+Your app will be available at http://localhost:5173 (or similar).
 
 📂 Project Structure
+php
+Copy code
 vr180-converter/
 ├── public/              # Static assets
 ├── src/                 # Application source code
@@ -45,9 +54,7 @@ vr180-converter/
 ├── package.json         # Dependencies & scripts
 ├── vite.config.ts       # Vite configuration
 └── tailwind.config.ts   # TailwindCSS config
-
 🛠️ Tech Stack
-
 ⚡ Vite – lightning-fast frontend tooling
 
 ⚛️ React + TypeScript – UI framework
@@ -59,17 +66,9 @@ vr180-converter/
 🎬 FFmpeg – video processing and encoding
 
 📸 Demo
-
 🔗 Coming soon — will showcase before/after VR180 conversion
 
 🤝 Contributing
-
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
----
 
-## 🚀 Getting Started
 
-### 1. Clone this repository
-```bash
-git clone https://github.com/YaminiMakala/vr180-converter.git
-cd vr180-converter
