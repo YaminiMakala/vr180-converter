@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core VR/AI Platform Colors */
+    --background: 220 27% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 95%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 15%;
+    --ring: 200 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* VR Platform Specific Tokens */
+    --vr-primary: 200 100% 50%;
+    --vr-secondary: 280 80% 60%;
+    --vr-accent: 180 100% 70%;
+    --vr-glow: 200 100% 80%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 50%) 0%, hsl(280 80% 60%) 100%);
+    --gradient-secondary: linear-gradient(90deg, hsl(240 15% 15%) 0%, hsl(240 20% 20%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(200 100% 50% / 0.3) 0%, transparent 70%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 27% 8%) 0%, hsl(240 25% 12%) 50%, hsl(220 27% 8%) 100%);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Shadows & Glows */
+    --shadow-glow: 0 0 50px hsl(200 100% 50% / 0.3);
+    --shadow-card: 0 10px 50px hsl(220 27% 4% / 0.5);
+    --shadow-intense: 0 0 100px hsl(280 80% 60% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same colors - platform is inherently dark */
+    --background: 220 27% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 95%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 15%;
+    --ring: 200 100% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
