@@ -1,76 +1,95 @@
 # 🎥 VR180 Converter
 
-Convert any **2D video** into an **immersive VR180 experience** with AI-powered depth estimation and stereoscopic rendering.
-
-This project provides a web interface to upload a video, process it with AI, and preview/download the generated VR180 output.
-
----
-
-## ✨ Features
-- 📤 **Upload 2D videos** (MP4, MOV, AVI, up to 500MB)
-- 🧠 **AI Processing Pipeline**
-  - Frame analysis
-  - Depth estimation with neural networks (e.g. MiDaS)
-  - Stereoscopic rendering for left/right eye
-  - VR180 encoding
-- 🎭 **Multiple Preview Modes**
-  - Side-by-Side
-  - Anaglyph
-  - Mono
-- 🎧 **VR Compatibility**
-  - Oculus Quest 2/3
-  - HTC Vive
-  - PlayStation VR
-  - YouTube VR
-- ⬇️ **Download VR180 MP4** for offline viewing
+Transform your regular 2D videos into **immersive VR180 experiences** with the power of AI.  
+This project converts any standard video into stereoscopic VR180 content using advanced depth estimation and spatial rendering.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Features
+- Convert **2D videos** into **VR180 immersive format**
+- Modern **React + Vite + TypeScript** frontend
+- **shadcn/ui** components for a sleek design
+- Responsive and fast ⚡
+- Easy to run locally and deploy
 
-### 1. Clone this repository
+---
+
+## 🛠️ Tech Stack
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
 ```bash
 git clone https://github.com/YaminiMakala/vr180-converter.git
 cd vr180-converter
+```
 
-###2. Install dependencies
-bash
-Copy code
+Install dependencies:
+
+```bash
 npm install
+```
 
-###3. Run the development server
-bash
-Copy code
+Run development server:
+
+```bash
 npm run dev
-Your app will be available at http://localhost:5173 (or similar).
+```
 
-📂 Project Structure
-php
-Copy code
+Your app will be available at:  
+👉 [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 🖼️ Screenshots
+
+### Home Page
+![VR180 Converter Screenshot](./screenshots/home.png)
+
+---
+
+## 📂 Project Structure
+```
 vr180-converter/
-├── public/              # Static assets
-├── src/                 # Application source code
-│   ├── components/      # Reusable UI components
-│   ├── pages/           # Main pages (upload, preview, etc.)
-│   └── lib/             # Utility and helper functions
-├── package.json         # Dependencies & scripts
-├── vite.config.ts       # Vite configuration
-└── tailwind.config.ts   # TailwindCSS config
-🛠️ Tech Stack
-⚡ Vite – lightning-fast frontend tooling
+├── public/          # Static assets (favicon, images, etc.)
+├── src/             # Source code
+│   ├── components/  # Reusable UI components
+│   ├── pages/       # Application pages
+│   ├── App.tsx      # Main app entry
+│   └── main.tsx     # Vite entry point
+├── package.json     # Dependencies & scripts
+└── README.md        # Project docs
+```
 
-⚛️ React + TypeScript – UI framework
+---
 
-🎨 TailwindCSS + shadcn/ui – modern, customizable design system
+## 🔧 Build for Production
 
-🧠 AI Models (MiDaS / DepthNet) – depth estimation
+```bash
+npm run build
+```
 
-🎬 FFmpeg – video processing and encoding
+Preview production build:
 
-📸 Demo
-🔗 Coming soon — will showcase before/after VR180 conversion
+```bash
+npm run preview
+```
 
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+---
 
+## 📌 TODO / Future Improvements
+- [ ] Add drag & drop video uploader
+- [ ] Show video conversion progress
+- [ ] Cloud storage integration
+- [ ] Replace/remove demo button functionality
+
+---
 
